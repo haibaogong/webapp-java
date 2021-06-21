@@ -1,0 +1,16 @@
+.classpath
+.project
+.checkstyle
+*.iml
+*.iws
+*.ipr
+.idea
+.settings/
+target/
+cd_licenses.xml
+.metadata/
+temp/
+build.log
+.gradle
+build/
+logs/
