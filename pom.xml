@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.sdl.dxa</groupId>
+        <artifactId>dxa-oss-parent</artifactId>
+        <version>2.2.17-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.sdl.dxa.modules</groupId>
+    <artifactId>dxa-modules</artifactId>
+    <version>2.2.17-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>DXA Modules</name>
+    <description>Top level project of DXA module</description>
+
+    <properties>
+        <dxa-modules.version>${project.version}</dxa-modules.version>
+        <dxa-module-core.version>${project.version}</dxa-module-core.version>
+        <dxa-module-cid.version>${project.version}</dxa-module-cid.version>
+        <dxa-module-googleanalytics.version>${project.version}</dxa-module-googleanalytics.version>
+        <dxa-module-mediamanager.version>${project.version}</dxa-module-mediamanager.version>
+        <dxa-module-search.version>${project.version}</dxa-module-search.version>
+        <dxa-module-smarttarget.version>${project.version}</dxa-module-smarttarget.version>
+        <dxa-module-context-expressions>${project.version}</dxa-module-context-expressions>
+        <dxa-module-51degrees.version>${project.version}</dxa-module-51degrees.version>
+        <dxa-module-audience-manager.version>${project.version}</dxa-module-audience-manager.version>
+        <dxa-module-ugc.version>${project.version}</dxa-module-ugc.version>
+        <dxa-module-test.version>${project.version}</dxa-module-test.version>
+        <dxa-module-tridion-docs-mashup.version>${project.version}</dxa-module-tridion-docs-mashup.version>
+        <dxa-module-tridion-docs-search.version>${project.version}</dxa-module-tridion-docs-search.version>
+        <dxa-module-dd.version>${project.version}</dxa-module-dd.version>
+        <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
+    </properties>
+
+    <scm>
+        <url>https://github.com/sdl/dxa-modules</url>
+        <connection>scm:git:git@github.com:sdl/dxa-modules.git</connection>
+        <developerConnection>scm:git:git@github.com:sdl/dxa-modules.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+
+   <modules>
+     <module>dxa-module-51degrees</module>
+     <module>dxa-module-audience-manager</module>
+     <module>dxa-module-cid</module>
+     <module>dxa-module-context-expressions</module>
+     <module>dxa-module-core</module>
+     <module>dxa-module-googleanalytics</module>
+     <module>dxa-module-mediamanager</module>
+     <module>dxa-module-search</module>
+     <module>dxa-module-smarttarget</module>
+     <module>dxa-module-test</module>
+     <module>dxa-module-tridion-docs-mashup</module>
+     <module>dxa-module-tridion-docs-search</module>
+     <module>dxa-module-ugc</module>
+     <module>dxa-module-dynamic-documentation</module>
+     <module>dxa-webapp</module>
+   </modules>
+   
+    <repositories>
+       <repository>
+         <id>sonatype-nexus-snapshots</id>
+         <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+         <releases><enabled>false</enabled></releases>
+         <snapshots><enabled>true</enabled></snapshots>
+       </repository>
+    </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.sdl.tridion.xo</groupId>
+                <artifactId>xo-compatible-client</artifactId>
+                <version>11.0.1-1015</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
