@@ -1,9 +1,0 @@
-{
-  "name": "environment",
-  "settings": "Tridion.ContentManager.ContentManagement.Fields.EmbeddedSchemaField",
-  "cmsurl": "http://localhost",
-  "mapsApiKey": "xxx",
-  "dataFormats": "json, rss, atom",
-  "culture": "en-US",
-  "language": "English"
-}
