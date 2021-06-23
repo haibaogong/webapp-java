@@ -10,38 +10,33 @@
 
 <BackgroundPicture class="rich-text ${entity.htmlClasses}" ${markup.entity(entity)}>
 
-    <div id="myButtons2" class="bs-example">
-        <button type="button" class="btn btn-primary"
-                data-loading-text="Loading...">原始
-        </button>
-    </div>
+    <div class="mc_banner john_div">
+        <div class="mc_banner_bg mc_lbjq">
+            <div class="john_div1" ${markup.property(entity, "image")}>
+                <dxa:media media="${entity.image}" aspect="3.3" />
+            </div>
+        </div>
+        <div class="mc_banner_cotainer g_content yxedr_active">
+            <h4 class="mc_banner_titbox" style="white-space: normal;">
 
-    <div class="mc_banner_bg mc_lbjq">
-        <div class="john_div1" ${markup.property(entity, "image")}>
-            <dxa:media media="${entity.image}" aspect="3.3"/>
+                    <c:if test="${not empty entity.headline}">
+                       <span ${markup.property(entity, "headline")} class="mc_banner_title mc_banner_title_b2 mc_block">
+                           ${entity.headline}
+                       </span>
+                   </c:if>
+
+            </h4><p>
+            <span class="mc_banner_title mc_banner_title_b2 mc_block"><br/></span></p>
+            <h4 class="mc_banner_titbox">
+
+                    <c:if test="${not empty entity.content}">
+                        <span ${markup.property(entity, "content")} class="mc_banner_subtitle mc_banner_subtitle_b2 mc_block">
+                            ${entity.content}
+                        </span>
+                    </c:if>
+                <br/>
+            </h4>
         </div>
-    </div>
-<%--    <c:choose>--%>
-<%--        <c:when test="${not empty entity.image and screenWidth != 'EXTRA_SMALL'}">--%>
-<%--            <div class="hero" ${markup.property(entity, "image")}>--%>
-<%--                <dxa:media media="${entity.image}" aspect="3.3"/>--%>
-<%--                <div class="overlay overlay-tl ribbon">--%>
-<%--                    <h1 ${markup.property(entity, "headline")}>${entity.headline}</h1>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-<%--        </c:when>--%>
-<%--        <c:otherwise>--%>
-<%--            <h1 ${markup.property(entity, "headline")}>${entity.headline}</h1>--%>
-<%--        </c:otherwise>--%>
-<%--    </c:choose>--%>
-    <c:if test="${not empty entity.content}">
-        <div ${markup.property(entity, "content")} class=".text-center">
-                ${entity.content}
-        </div>
-    </c:if>
-    <c:if test="${not empty entity.date}">
-        <div class="meta" ${markup.property(entity, "date")}>
-                ${markup.formatDate(entity.date)}
-        </div>
-    </c:if>
+
+   </div>
 </BackgroundPicture>

@@ -27,11 +27,29 @@
     <!--[if lt IE 9]>
     <script src="${markup.versionedContent('/assets/scripts/ie.js')}"></script>
     <![endif]-->
+    <!-- start rigol -->
+    <script src="/static/js/jquery-3.5.1.min.js"></script>
+    <link href="/static/css/bootstrap.min-v3.3.5.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/base-v1.4.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/iconfont.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/slick.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/slick-theme.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/style.css?time=9806" type="text/css" rel="stylesheet" />
+    <link href="/static/css/style1.css?time=8090" type="text/css" rel="stylesheet" />
+    <!-- 视频 -->
+    <link href="/static/css/video-js.css" rel="stylesheet">
+    <!-- end rigol -->
 </head>
 <body>
 <dxa:region name="Header"/>
 <main class="page-row page-row-expanded ${pageModel.htmlClasses}" role="main">
-    <div class="container-fluid page-border">
+    <%
+    //banner 100%  显示
+    //<div class="container-fluid page-border">
+    %>
+    <div>
         <dxa:region name="Hero"/>
         <dxa:region name="Content Tools"/>
         <div class="row">

@@ -20,9 +20,9 @@ public class CoreInitializer {
 
     @RegisteredViewModels({
             //start haibao
-            @RegisteredViewModel(viewName = "Heading", modelClass = Heading.class),
-            @RegisteredViewModel(viewName = "Haibao", modelClass = Haibao.class),
             @RegisteredViewModel(viewName = "BackgroundPicture", modelClass = BackgroundPicture.class),
+            @RegisteredViewModel(viewName = "SolutionsContent", modelClass = SolutionsContent.class),
+            @RegisteredViewModel(viewName = "SolutionsContentList", modelClass = SolutionsContentList.class),
             //end haibao
             @RegisteredViewModel(viewName = "Article", modelClass = Article.class),
             @RegisteredViewModel(viewName = "Accordion", modelClass = ItemList.class),
